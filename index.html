@@ -67,7 +67,7 @@
         z: pointLight.position.z
       };
 
-      gui.addColor(lightSettings, 'color').name('PointLight Color').onChange(value => {
+      gui.addColor(lightSettings, 'color').name('Change PointLight').onChange(value => {
         pointLight.color.set(value);
       });
       gui.add(lightSettings, 'intensity', 0, 20).name('Intensity').onChange(value => {
